@@ -39,7 +39,7 @@ function Exchange() {
         const formData = new FormData(e.target);
         const redeemCode = formData.get('redeem-code');
 
-        if (redeemCode === import.meta.env.VITE_POE_GIFT_REDEEM_CODE) {
+        if (redeemCode === '1234567890') {
             setIsOpen(true);
         } else {
             setIsWrong(true);

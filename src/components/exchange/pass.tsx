@@ -10,8 +10,8 @@ import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect';
 import React from 'react';
 
 const Comp = React.forwardRef<HTMLDivElement, { isOpen: boolean }>(({ isOpen }, ref) => {
-    const account = import.meta.env.VITE_POE_GIFT_ACCOUNT;
-    const password = import.meta.env.VITE_POE_GIFT_PASSWORD;
+    const account = 'dummy@protonmail.com';
+    const password = 'happy-christmas-2024';
 
     const accountWords = Array.from<string>(account).map(char => ({ text: char }));
     const passwordWords = Array.from<string>(password).map(char => ({ text: char }));
